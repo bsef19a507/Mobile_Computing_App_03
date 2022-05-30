@@ -15,7 +15,7 @@ public class aboutme extends AppCompatActivity {
     }
     public void backToCalculator(View v){
         Intent intent = new Intent(this, MainActivity.class);
-        
+        startActivity(intent);
 
     }
 }
