@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         EditText e1 = findViewById(R.id.second_num);
         EditText e2 = findViewById(R.id.first_num);
         String num1_str =e1.getText().toString();
-        String num1_str =e2.getText().toString();
+        String num2_str =e2.getText().toString();
         EditText result = findViewById(R.id.second_num2);
         int num1 = Integer.parseInt(num1_str);
         int num2 = Integer.parseInt(num2_str);
