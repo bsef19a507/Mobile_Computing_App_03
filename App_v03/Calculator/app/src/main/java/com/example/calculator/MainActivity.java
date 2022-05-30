@@ -36,5 +36,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void calculate(View v){
+        switch (v.getId()) {
+            case R.id.button_one:
+                // do something
+                break;
+            case R.id.button_two:
+                // do something else
+                break;
+            case R.id.button_three:
+                // i'm lazy, do nothing
+                break;
+        }
+    }
+
 
 }
