@@ -40,17 +40,29 @@ public class MainActivity extends AppCompatActivity {
     public void calculate(View v){
         EditText num1_str = findViewById(R.id.second_num);
         EditText num2_str = findViewById(R.id.first_num);
+        EditText result = findViewById(R.id.second_num2);
         int num1 = Integer.parseInt(num1_str);
         int num2 = Integer.parseInt(num2_str);
         switch (v.getId()) {
             case R.id.button3:
                 int sum = num1+num2;
+                String sum_str = Integer.toString(sum);
+                result.setText(sum_str);
                 break;
-            case R.id.button_two:
-                // do something else
+            case R.id.button4:
+                int sub = num1-num2;
+                String sub_str = Integer.toString(sub);
+                result.setText(sub_str);
                 break;
-            case R.id.button_three:
-                // i'm lazy, do nothing
+            case R.id.button5:
+                int product = num1*num2;
+                String product_str = Integer.toString(product);
+                result.setText(product_str);
+                break;
+            case R.id.button6:
+                int div = num1/num2;
+                String div_str = Integer.toString(div);
+                result.setText(div_str);
                 break;
         }
     }

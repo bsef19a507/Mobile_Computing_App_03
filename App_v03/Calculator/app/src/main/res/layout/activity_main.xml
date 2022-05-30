@@ -113,7 +113,6 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/num2"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text=""
