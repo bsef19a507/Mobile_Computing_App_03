@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,9 +38,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View v){
+        EditText num1_str = findViewById(R.id.second_num);
+        EditText num2_str = findViewById(R.id.first_num);
+        int num1 = Integer.parseInt(num1_str);
+        int num2 = Integer.parseInt(num2_str);
         switch (v.getId()) {
-            case R.id.button_one:
-                // do something
+            case R.id.button3:
+                int sum = num1+num2;
                 break;
             case R.id.button_two:
                 // do something else
